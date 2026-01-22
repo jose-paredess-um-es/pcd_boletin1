@@ -1,0 +1,4 @@
+[
+  "test_ejercicio1_pytest.py::test_capital_case",
+  "test_ejercicio1_pytest.py::test_raises_exception_on_non_string_arguments"
+]
