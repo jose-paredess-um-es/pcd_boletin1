@@ -1,4 +1,11 @@
 [
+  "juego_3_en_raya.py::test_ganador",
+  "juego_3_en_raya.py::test_mostrar_tablero",
+  "juego_3_en_raya.py::test_movimiento_columna_fuera_tablero",
+  "juego_3_en_raya.py::test_movimiento_fila_fuera_tablero",
+  "juego_3_en_raya.py::test_movimiento_fila_y_columna_fuera_tablero",
+  "juego_3_en_raya.py::test_movimiento_incorrecto",
+  "juego_3_en_raya.py::test_no_ganador",
   "test_ejercicio1_pytest.py::test_capital_case",
   "test_ejercicio1_pytest.py::test_raises_exception_on_non_string_arguments"
 ]

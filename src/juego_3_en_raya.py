@@ -138,8 +138,27 @@ def jugada_ganadora(movimientos_jugador):
     #Comprobamos si hay 3 fichas en una fila
     for fila in movimientos_jugador:
         movimientos_columna = movimientos_jugador[fila]
+
         if len(movimientos_columna)==3:
             return True
+        
+
+    
+    for i in range(0,3):
+        cantidad = 0
+        for fila in movimientos_jugador:
+            movimientos_columna = movimientos_jugador[fila]
+            if i in movimientos_columna:
+                cantidad += 1
+            
+        if cantidad == 3:
+            return True
+
+
+    
+
+
+
     return False
 
 
@@ -201,7 +220,7 @@ if __name__ == "__main__":
 
         movimientos_jugador_activo= movimientos_jugadores[jugador_activo]
         movimientos_otro_jugador = movimientos_jugadores[(jugador_activo+1)%2]
-        if movimiento_valido(x,y, movimientos_otro_jugador):
+        if movimiento_valido(n, x,y, movimientos_otro_jugador):
             mov_col= movimientos_jugador_activo.get(x,[])
             mov_col.append(y)
             movimientos_jugador_activo[x]= mov_col
